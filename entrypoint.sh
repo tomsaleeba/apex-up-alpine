@@ -9,6 +9,8 @@ if [ $IS_PROD ]; then
   extra_deploy_cmd="deploy production"
   extra_url_cmd="production"
 fi
+echo "up version:"
+up version
 up $extra_deploy_cmd
 echo "URL of deployment:"
 up url $extra_url_cmd
