@@ -21,3 +21,4 @@ docker run \
 
 ## TODO
  1. read AWS creds profile name from volume
+ 1. add git and ssh support for cloning repos
