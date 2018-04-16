@@ -19,6 +19,11 @@ docker run \
   tomsaleeba/apex-up-alpine:0.1
 ```
 
-## TODO
- 1. read AWS creds profile name from volume
- 1. add git and ssh support for cloning repos
+## Production deploys
+If you want to deploy to production, you should also supply an extra envrionmental variable:
+```bash
+  -e IS_PROD=1 \
+```
+
+## Up profile value
+It doesn't matter if you define a `profile` in your `up.json`, this will still deploy appropriately. For reference, we define the AWS credentials with only a `default` entry.
