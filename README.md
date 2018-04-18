@@ -1,5 +1,5 @@
 # apex-sh-alpine
-A Docker container to run [up](https://up.docs.apex.sh) from Apex.
+A Docker container to run Apex [up](https://up.docs.apex.sh). I created it to run in a CircleCI workflow to perform Continuous Deployment. See https://github.com/tomsaleeba/foo-api for an example app that uses this container.
 
 ## Quickstart
 This container needs a few things to operate:
@@ -34,4 +34,4 @@ If you want to delete the stack (API Gateway, Lambda, etc) then supply this envi
 Note: this will delete both `production` and `staging` stages AND everything else.
 
 ## Up profile value
-It doesn't matter if you define a `profile` in your `up.json`, this will still deploy appropriately. For reference, we define the AWS credentials with only a `default` entry.
+It doesn't (seem to) matter if you define a `profile` in your `up.json`, this will still deploy appropriately. For reference, we define the AWS credentials with only a `default` entry.

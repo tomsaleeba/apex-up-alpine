@@ -7,7 +7,8 @@ RUN wget -O apex-install.sh 'https://up.apex.sh/install' && \
     rm -r /apex/ && \
     mkdir /work && \
     apk update && \
-    apk add ca-certificates
+    apk add ca-certificates && \
+    apk add git
 WORKDIR /work
 ADD entrypoint.sh /
 ENTRYPOINT [ "sh", "/entrypoint.sh" ]
