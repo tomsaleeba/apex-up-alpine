@@ -1,5 +1,6 @@
-# apex-sh-alpine
-A Docker container to run Apex [up](https://up.docs.apex.sh). I created it to run in a CircleCI workflow to perform Continuous Deployment. See https://github.com/tomsaleeba/foo-api for an example app that uses this container.
+> A Docker container to run Apex [up](https://up.docs.apex.sh). I created it to run in a CircleCI workflow to perform Continuous Deployment. See https://github.com/tomsaleeba/foo-api for an example app that uses this container.
+
+Currently running up version: 0.6.8
 
 ## Quickstart
 This container needs a few things to operate:
