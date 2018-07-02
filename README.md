@@ -17,7 +17,7 @@ docker run \
   -v $(pwd):/work \
   -e AWS_ACCESS_KEY_ID=<your key here> \
   -e AWS_SECRET_ACCESS_KEY=<your secret here> \
-  tomsaleeba/apex-up-alpine:0.2
+  tomsaleeba/apex-up-alpine:0.3.4
 ```
 This will deploy to the `staging` stage of API Gateway. See below for when you want to deploy to `production`.
 
