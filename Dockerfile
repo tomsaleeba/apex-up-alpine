@@ -1,6 +1,6 @@
 FROM alpine:3.7
 WORKDIR /apex
-ENV VERSION=0.7.3
+ENV VERSION=0.7.7
 RUN wget -O apex-install.sh 'https://up.apex.sh/install' && \
     export BINDIR=/usr/bin/ && \
     sh apex-install.sh $VERSION && \
