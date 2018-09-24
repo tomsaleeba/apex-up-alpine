@@ -1,4 +1,6 @@
 #!/usr/bin/sh
+set -e
+env_fragment="staging"
 [ -n "$IS_PROD" ] || IS_PROD=0
 [ -n "$IS_DELETE" ] || IS_DELETE=0
 the_dir=~/.aws
@@ -25,5 +27,5 @@ echo up version: $(up version)
 up $action $env_fragment
 if [ $IS_DELETE -le 0 ]; then
   echo "URL of deployment:"
-  up url $env_fragment
+  up url --stage=$env_fragment
 fi
