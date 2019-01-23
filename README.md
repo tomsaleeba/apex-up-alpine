@@ -1,6 +1,6 @@
 > A Docker container to run Apex [up](https://up.docs.apex.sh). I created it to run in a CircleCI workflow to perform Continuous Deployment. See https://github.com/tomsaleeba/foo-api for an example app that uses this container.
 
-Currently running up version: 0.7.7
+The release tags on this repo are in the format: `<our version>_<apex up version>`, so where you see `0.3.6_0.8.1`, that means we're using version `0.8.1` of Apex UP.
 
 ## Quickstart
 This container needs a few things to operate:
@@ -17,7 +17,7 @@ docker run \
   -v $(pwd):/work \
   -e AWS_ACCESS_KEY_ID=<your key here> \
   -e AWS_SECRET_ACCESS_KEY=<your secret here> \
-  tomsaleeba/apex-up-alpine:0.3.6
+  tomsaleeba/apex-up-alpine:0.3.6_0.8.1
 ```
 This will deploy to the `staging` stage of API Gateway. See below for when you want to deploy to `production`.
 
